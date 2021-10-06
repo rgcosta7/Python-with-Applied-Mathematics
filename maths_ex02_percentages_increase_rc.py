@@ -21,6 +21,7 @@ Current Price: £50.25 - Percentage Increase: 5.75% - New Price: £53.14
 
 '''
 
+
 print("Finding a % increase as a value")
 current_price = float(input("Please enter the current price: "))
 percentage_increase = float(input("Please enter the percentage increase: "))
