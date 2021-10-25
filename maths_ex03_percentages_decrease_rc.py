@@ -31,6 +31,5 @@ Old Price: £45.50 - New Price: £40.00 - Decrease: 12.09%
 oldprice = float(input("Plesae enter the old price: "))
 newprice = float(input("Please enter the new price: "))
 
-
 percentage = (oldprice - newprice) / oldprice * 100
 print(f'Old Price: £{oldprice:.2f} - New Price: £{newprice:.2f} - Decrease: {percentage:.2f}% ')
