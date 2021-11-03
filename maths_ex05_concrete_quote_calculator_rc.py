@@ -57,11 +57,9 @@ cost = float(input("Please enter the cost (m³): "))
 
 volume = length * width * depth
 quote = cost * volume
+if quote < MIN_ORDER:
+    quote = MIN_ORDER
 
-if quote >= MIN_ORDER:
-    print()
-    print(f'Concrete Quote\n Width: {width} m\n Length: {length} m\n Depth: {depth} m\n ', end='')
-    print(f'Volume: {volume:.2f} m³\n Cost: {cost:.2f} per m³\n Quote: £{quote:.2f}')
-else:
-    print()
-    print('Minimum order value not reached!')
+print()
+print(f'Concrete Quote\n Width: {width} m\n Length: {length} m\n Depth: {depth} m\n ', end='')
+print(f'Volume: {volume:.2f} m³\n Cost: {cost:.2f} per m³\n Quote: £{quote:.2f}')
